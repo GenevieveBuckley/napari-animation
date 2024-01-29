@@ -22,9 +22,9 @@ This plugin is built on [`naparimovie`](https://github.com/guiwitz/naparimovie) 
 
 ----------------------------------
 
-```{seealso}
-See Add a link to your repository for more information.
-```
+:::{note}
+This text is **standard** _Markdown_
+:::
 
 ## Overview
 
