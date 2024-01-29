@@ -53,9 +53,9 @@ PyPI
 
 `napari-animation` is available through the Python package index and can be installed using `pip`.
 
-```sh
-pip install napari-animation
-```
+::bash
+   pip install napari-animation
+
 
 ```{warning}
 `napari-animation` uses `ffmpeg` to export animations. If you are using a macOS arm64 computer (Apple Silicon e.g. M1, M2 processor)
