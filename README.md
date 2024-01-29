@@ -39,8 +39,7 @@ This plugin remains under development and contributions are very welcome, please
 pip install napari-animation
 ```
 
-```{admonition} WARNING
-:class: warning
+````{warning}
 `napari-animation` uses `ffmpeg` to export animations. If you are using a macOS arm64 computer (Apple Silicon e.g. M1, M2 processor)
 the PyPI package does not include the needed binary for your platform. You will need to install `ffmpeg` using
 `conda` from the [conda-forge channel](https://conda-forge.org/docs/#what-is-conda-forge) (`conda install -c conda-forge ffmpeg`)
@@ -106,8 +105,9 @@ use of the plugin follow.
 Contributions are very welcome and a detailed contributing guide is coming soon.
 In the meantime, clone this repository and install it in editable mode using `pip`. 
 We recommend using a virtual environment, for example `conda`.
-```{admonition} IMPORTANT
-:class: important
+
+
+```{important}
 Ensure you have a suitable Qt backend for napari! We recommend `PyQt5`.
 
 For more information, see the napari [Qt backend installation guide](https://napari.org/stable/tutorials/fundamentals/installation.html#choosing-a-different-qt-backend)
@@ -126,8 +126,7 @@ Tests are run with `pytest`.
 You can make sure your `[dev]` installation is working properly by running
 `pytest .` from within the repository.
 
-```{admonition} NOTE
-:class: note
+````{note}
 We use [`pre-commit`](https://pre-commit.com) to sort imports and lint with
 [`ruff`](https://github.com/astral-sh/ruff) and format code with
 [`black`](https://github.com/psf/black) automatically prior to each commit.
