@@ -21,6 +21,14 @@
 This plugin is built on [`naparimovie`](https://github.com/guiwitz/naparimovie) from [@guiwitz](https://github.com/guiwitz). `naparimovie` was submitted to napari in [PR#851](https://github.com/napari/napari/pull/780) before napari plugin infrastructure existed.
 
 ----------------------------------
+
+```rst
+.. admonition:: Generic admonitions has a title
+
+
+   A content follows under the blank line.
+```
+
 ## Overview
 
 **napari-animation** provides a framework for the creation of animations in napari. The plugin contains:
