@@ -22,11 +22,8 @@ This plugin is built on [`naparimovie`](https://github.com/guiwitz/naparimovie) 
 
 ----------------------------------
 
-```rst
-.. admonition:: Generic admonitions has a title
-
-
-   A content follows under the blank line.
+```{seealso}
+See Add a link to your repository for more information.
 ```
 
 ## Overview
