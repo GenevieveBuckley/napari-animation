@@ -24,7 +24,7 @@ September
 --------------
 
 This plugin is built on
-```naparimovie`` <https://github.com/guiwitz/naparimovie>`__ from
+`naparimovie <https://github.com/guiwitz/naparimovie>`__ from
 `@guiwitz <https://github.com/guiwitz>`__. ``naparimovie`` was submitted
 to napari in `PR#851 <https://github.com/napari/napari/pull/780>`__
 before napari plugin infrastructure existed.
@@ -56,7 +56,11 @@ can be installed using ``pip``.
 
    pip install napari-animation
 
-:literal:`{warning} \`napari-animation\` uses \`ffmpeg\` to export animations. If you are using a macOS arm64 computer (Apple Silicon e.g. M1, M2 processor) the PyPI package does not include the needed binary for your platform. You will need to install \`ffmpeg\` using \`conda\` from the [conda-forge channel](https://conda-forge.org/docs/#what-is-conda-forge) (\`conda install -c conda-forge ffmpeg\`) or using [\`homebrew\`](https://brew.sh) (\`brew install ffmpeg\`).`
+.. warning::
+
+   ``napari-animation`` uses ``ffmpeg`` to export animations.
+
+   If you are using a macOS arm64 computer (Apple Silicon e.g. M1, M2 processor) the PyPI package does not include the needed binary for your platform. You will need to install ``ffmpeg`` using ``conda`` from the `conda-forge channel <https://conda-forge.org/docs/#what-is-conda-forge>`_ (``conda install -c conda-forge ffmpeg``) or using `homebrew <https://brew.sh>`_ (``brew install ffmpeg``).
 
 Conda
 ~~~~~
@@ -147,7 +151,9 @@ coming soon. In the meantime, clone this repository and install it in
 editable mode using ``pip``. We recommend using a virtual environment,
 for example ``conda``.
 
-:literal:`{important} Ensure you have a suitable Qt backend for napari! We recommend \`PyQt5\`. For more information, see the napari [Qt backend installation guide](https://napari.org/stable/tutorials/fundamentals/installation.html#choosing-a-different-qt-backend)`
+.. important::
+
+   Ensure you have a suitable Qt backend for napari! We recommend \`PyQt5\`. For more information, see the napari `Qt backend installation guide <https://napari.org/stable/tutorials/fundamentals/installation.html#choosing-a-different-qt-backend>`_.
 
 To set up your development installation, clone this repository, navigate
 to the clone folder, and install napari-animation in editable mode using
@@ -163,19 +169,22 @@ Tests are run with ``pytest``. You can make sure your ``[dev]``
 installation is working properly by running ``pytest .`` from within the
 repository.
 
-\`\`\ ``{note} We use [``\ pre-commit\ ``](https://pre-commit.com) to sort imports and lint with [``\ ruff\ ``](https://github.com/astral-sh/ruff) and format code with [``\ black\ ``](https://github.com/psf/black) automatically prior to each commit. To minmize test errors when submitting pull requests, please install``\ pre-commit\`
-in your environment as follows:
+.. note::
 
-``pre-commit install``
+   We use `pre-commit <https://pre-commit.com>`_ to sort imports and lint with `ruff <https://github.com/astral-sh/ruff>`_ and format code with `black <https://github.com/psf/black>`_ automatically prior to each commit. To minmize test errors when submitting pull requests, please install ``pre-commit`` in your environment as follows:
 
-::
+   .. code:: sh
+
+      pre-commit install
 
 
-   ## Documentation
+Documentation
+-------------
 
-   The documentation for napari-animation is built with [Sphinx](https://www.spinx-doc.org). After installing the documentation dependencies with
+The documentation for napari-animation is built with `Sphinx <https://www.spinx-doc.org>`_. After installing the documentation dependencies with:
 
-   ```sh
+.. code:: sh
+
    pip install ".[doc]"
 
 you can see a local version of the documentation by running
@@ -201,14 +210,14 @@ If you encounter any problems, please `file an
 issue <https://github.com/napari/napari-animation/issues>`__ along with
 a detailed description.
 
-[@napari]: https://github.com/napari [BSD-3]:
-http://opensource.org/licenses/BSD-3-Clause
-[cookiecutter-napari-plugin]:
-https://github.com/napari/cookiecutter-napari-plugin [file an issue]:
-https://github.com/sofroniewn/napari-animation/issues [napari]:
-https://github.com/napari/napari [tox]:
-https://tox.readthedocs.io/en/latest/ [pip]:
-https://pypi.org/project/pip/ `PyPI <#pypi>`__: https://pypi.org/
+* `@napari <https://github.com/napari>`_
+* `BSD-3 <https://opensource.org/license/bsd-3-clause/>`_
+* `cookiecutter-napari-plugin <https://github.com/napari/cookiecutter-napari-plugin>`_
+* `file an issue <https://github.com/sofroniewn/napari-animation/issues>`_
+* `napari <https://github.com/napari/napari>`_
+* `tox <https://tox.readthedocs.io/en/latest/>`_
+* `pip <https://pypi.org/project/pip/>`_
+* `PyPI <https://pypi.org/>`_
 
 .. |License| image:: https://img.shields.io/pypi/l/napari-animation.svg?color=green
    :target: https://github.com/napari/napari-animation/raw/main/LICENSE
